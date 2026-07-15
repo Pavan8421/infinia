@@ -1,0 +1,10 @@
+# XTTS-v2 via coqui-tts (maintained fork; original `TTS` has no py3.12 wheel).
+# Installed on Lightning cloudspace + RTX PRO 6000 Blackwell Server Edition.
+#
+# Known pins (Python 3.12 / torch 2.8+cu128):
+# - transformers must stay on 4.x (<5): transformers 5.x breaks
+#   `isin_mps_friendly` import used by coqui-tts XTTS layers.
+coqui-tts==0.27.5
+transformers>=4.57,<5
+torchaudio==2.8.0
+# torch already provided by Studio (2.8.0+cu128) — do not pip-install a CPU torch over it.

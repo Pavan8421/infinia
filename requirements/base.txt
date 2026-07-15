@@ -1,0 +1,7 @@
+# Shared / scaffold dependencies (Lightning Studio: use default `cloudspace` conda env)
+# Note: Lightning AI allows only ONE conda/venv per Studio. Per-model isolation
+# from the plan is documented in requirements/*.txt but must be applied either
+# by sequential install in this env, or by using separate Studios per model family.
+pyyaml>=6.0
+numpy>=1.24
+soundfile>=0.12

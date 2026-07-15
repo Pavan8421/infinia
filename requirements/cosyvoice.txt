@@ -1,0 +1,7 @@
+# CosyVoice2 — optional later (streaming latency)
+# Keep separate from XTTS/Parler installs if deps conflict.
+# Placeholder until Phase 4+/alternatives.
+# Follow official CosyVoice repo install instructions when enabling.
+torch
+torchaudio
+transformers

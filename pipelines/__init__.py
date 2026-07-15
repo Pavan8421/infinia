@@ -1,0 +1,23 @@
+"""Language TTS pipeline stubs sharing BaseTTSPipeline."""
+
+from pipelines.arabic import ArabicPipeline, default_arabic_pipeline
+from pipelines.base import BaseTTSPipeline, SynthResult
+from pipelines.config import load_config, project_root
+from pipelines.english import EnglishPipeline, default_english_pipeline
+from pipelines.hindi import HindiPipeline, default_hindi_pipeline
+from pipelines.telugu import TeluguPipeline, default_telugu_pipeline
+
+__all__ = [
+    "BaseTTSPipeline",
+    "SynthResult",
+    "load_config",
+    "project_root",
+    "EnglishPipeline",
+    "ArabicPipeline",
+    "HindiPipeline",
+    "TeluguPipeline",
+    "default_english_pipeline",
+    "default_arabic_pipeline",
+    "default_hindi_pipeline",
+    "default_telugu_pipeline",
+]

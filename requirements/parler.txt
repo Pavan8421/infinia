@@ -1,0 +1,7 @@
+# Indic Parler-TTS (AI4Bharat) — Hindi / Telugu
+# Install when running Hindi/Telugu pipelines; may conflict with Coqui TTS.
+torch
+torchaudio
+transformers
+parler-tts
+soundfile

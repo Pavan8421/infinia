@@ -1,0 +1,77 @@
+{
+  "notes": "Fixed benchmark set. ~10 words each; sentence 2 per language includes a name + number. Do not change after benchmarking starts.",
+  "languages": {
+    "english": [
+      {
+        "id": "en_1",
+        "text": "The weather today feels perfect for a long walk outside."
+      },
+      {
+        "id": "en_2",
+        "text": "Please call Rahul at extension two four seven immediately.",
+        "contains_name_and_number": true
+      },
+      {
+        "id": "en_3",
+        "text": "Open the window before the meeting starts this afternoon."
+      }
+    ],
+    "arabic": [
+      {
+        "id": "ar_1",
+        "text": "الطقس اليوم جميل ومناسب للمشي في الحديقة.",
+        "script": "Arabic",
+        "variety": "MSA"
+      },
+      {
+        "id": "ar_2",
+        "text": "اتصل بأحمد على الرقم خمسة وعشرين فوراً.",
+        "script": "Arabic",
+        "variety": "MSA",
+        "contains_name_and_number": true
+      },
+      {
+        "id": "ar_3",
+        "text": "افتح النافذة قبل بدء الاجتماع بعد الظهر.",
+        "script": "Arabic",
+        "variety": "MSA"
+      }
+    ],
+    "hindi": [
+      {
+        "id": "hi_1",
+        "text": "आज मौसम बाहर लंबी सैर के लिए बहुत अच्छा है।",
+        "script": "Devanagari"
+      },
+      {
+        "id": "hi_2",
+        "text": "कृपया राहुल को नंबर चौबीस सात पर तुरंत कॉल करें।",
+        "script": "Devanagari",
+        "contains_name_and_number": true
+      },
+      {
+        "id": "hi_3",
+        "text": "दोपहर की मीटिंग शुरू होने से पहले खिड़की खोल दो।",
+        "script": "Devanagari"
+      }
+    ],
+    "telugu": [
+      {
+        "id": "te_1",
+        "text": "ఈరోజు వాతావరణం బయట నడవడానికి చాలా బాగుంది.",
+        "script": "Telugu"
+      },
+      {
+        "id": "te_2",
+        "text": "దయచేసి రాహుల్‌ను ఇరవై నాలుగు ఏడు నంబర్‌కు వెంటనే కాల్ చేయండి.",
+        "script": "Telugu",
+        "contains_name_and_number": true
+      },
+      {
+        "id": "te_3",
+        "text": "మధ్యాహ్నం మీటింగ్ మొదలయ్యే ముందు కిటికీ తెరవండి.",
+        "script": "Telugu"
+      }
+    ]
+  }
+}

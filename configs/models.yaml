@@ -1,0 +1,61 @@
+# Hardware & model config for reproducible benchmarks.
+# All latency / RTF numbers must be reported on this GPU.
+
+hardware:
+  provider: lightning_ai
+  gpu: NVIDIA RTX PRO 6000 Blackwell Server Edition
+  vram_gb: 96
+  note: "Single fixed GPU for all benchmarks. Confirmed via nvidia-smi."
+
+reference:
+  path: data/reference/speaker_ref.wav
+  format: mono_wav
+  sample_rate_hz: 48000
+  duration_sec: 22.91
+  source: my-voice-sample.wav
+  spoken_language: unknown  # fill in once known (affects cross-lingual cloning note)
+
+test_sentences:
+  path: data/test_sentences.json
+
+models:
+  xtts_v2:
+    family: coqui
+    package: coqui-tts==0.27.5
+    model_name: tts_models/multilingual/multi-dataset/xtts_v2
+    languages: [english, arabic, hindi]  # not Telugu
+    cloning: true
+    streaming: true  # Coqui XTTS has a streaming mode; verify when wiring
+    requirements: requirements/xtts.txt
+    status: implemented  # Phase 2 step 3 — load/_synthesize wired; clips not generated yet
+    notes: "Use coqui-tts (not legacy TTS). Pin transformers>=4.57,<5."
+
+  indic_parler_tts:
+    family: ai4bharat
+    model_name: ai4bharat/indic-parler-tts  # confirm HF id at install time
+    languages: [hindi, telugu]
+    cloning: false  # style/description based; confirm at install
+    requirements: requirements/parler.txt
+    status: planned  # Phase 4
+
+  fish_speech:
+    family: fish_speech
+    languages: [arabic]  # candidate comparison
+    requirements: null
+    status: planned  # Phase 4
+
+  mms_tts:
+    family: meta_mms
+    languages: [arabic, telugu]  # fallback / comparison
+    requirements: null
+    status: planned  # Phase 4
+
+eval:
+  asr:
+    default: openai/whisper-large-v3
+    indic: indicwhisper  # or whisper-large-v3 if IndicWhisper unavailable
+  speaker_similarity: resemblyzer
+  requirements: requirements/eval.txt
+
+outputs_root: outputs
+results_table: results/results_table.md

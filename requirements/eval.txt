@@ -1,0 +1,6 @@
+# Evaluation harness (Whisper WER, speaker similarity)
+openai-whisper
+# or faster-whisper for speed
+jiwer
+resemblyzer
+# speechbrain is an alternative for ECAPA embeddings
