@@ -27,8 +27,8 @@ models:
     cloning: true
     streaming: true  # Coqui XTTS has a streaming mode; verify when wiring
     requirements: requirements/xtts.txt
-    status: implemented  # Phase 2 step 3 — load/_synthesize wired; clips not generated yet
-    notes: "Use coqui-tts (not legacy TTS). Pin transformers>=4.57,<5."
+    status: working  # Phase 2 step 4 — English test WAVs generated on RTX PRO 6000
+    notes: "Use coqui-tts (not legacy TTS). Pin transformers>=4.57,<5. Run: python scripts/run_english.py"
 
   indic_parler_tts:
     family: ai4bharat
@@ -52,10 +52,15 @@ models:
 
 eval:
   asr:
-    default: openai/whisper-large-v3
-    indic: indicwhisper  # or whisper-large-v3 if IndicWhisper unavailable
-  speaker_similarity: resemblyzer
+    default: openai/whisper-large-v3  # resolved to openai-whisper "large-v3"
+    package: openai-whisper==20250625
+    indic: whisper-large-v3  # use same model until IndicWhisper is wired
+    status: implemented  # Phase 3 step 2 — eval/wer.py
+  speaker_similarity:
+    method: resemblyzer
+    status: implemented  # Phase 3 step 3
   requirements: requirements/eval.txt
+  english_runner: scripts/eval_english.py  # Phase 3 step 4
 
 outputs_root: outputs
 results_table: results/results_table.md

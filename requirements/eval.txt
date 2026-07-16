@@ -1,6 +1,7 @@
-# Evaluation harness (Whisper WER, speaker similarity)
-openai-whisper
-# or faster-whisper for speed
-jiwer
-resemblyzer
-# speechbrain is an alternative for ECAPA embeddings
+# Evaluation harness — Phase 3
+# Installed on cloudspace / RTX PRO 6000:
+openai-whisper==20250625
+jiwer==4.0.0
+resemblyzer==0.1.4
+# webrtcvad (via resemblyzer) needs setuptools with pkg_resources:
+setuptools>=70,<81

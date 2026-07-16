@@ -1,0 +1,23 @@
+{
+  "en_1": {
+    "gen_time_sec": 1.4439,
+    "audio_duration_sec": 5.2913,
+    "rtf": 0.2729,
+    "mode": "batch",
+    "note": "From Phase 2 run_english.py on RTX PRO 6000; refresh with eval_english.py --resynth"
+  },
+  "en_2": {
+    "gen_time_sec": 0.9525,
+    "audio_duration_sec": 5.1527,
+    "rtf": 0.1849,
+    "mode": "batch",
+    "note": "From Phase 2 run_english.py on RTX PRO 6000; refresh with eval_english.py --resynth"
+  },
+  "en_3": {
+    "gen_time_sec": 0.7037,
+    "audio_duration_sec": 3.798,
+    "rtf": 0.1853,
+    "mode": "batch",
+    "note": "From Phase 2 run_english.py on RTX PRO 6000; refresh with eval_english.py --resynth"
+  }
+}

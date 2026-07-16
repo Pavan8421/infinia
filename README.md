@@ -63,8 +63,8 @@ Language pipelines raise `NotImplementedError` on `load()` / `synth()` until Pha
 |-------|--------|
 | 0 Environment & data | Done (ref wav + test sentences + RTX PRO 6000 decision) |
 | 1 Repo scaffold | Done (this tree) |
-| 2 English XTTS-v2 | Steps 1–3 done (`load`/`_synthesize` work on RTX PRO 6000). Step 4+ = generate test WAVs |
-| 3 Eval harness | After first WAVs |
+| 2 English XTTS-v2 | Done through step 4 — WAVs in `outputs/english/xtts/` (`python scripts/run_english.py`) |
+| 3 Eval harness | In progress — `python scripts/eval_english.py` (WER + Resemblyzer cosine + latency/RTF) |
 | 4 Hindi / Telugu / Arabic | After eval works |
 | 5 Compare + winners | |
 | 6 Package + write-up | |
