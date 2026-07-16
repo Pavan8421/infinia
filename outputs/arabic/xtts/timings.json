@@ -1,0 +1,20 @@
+{
+  "ar_1": {
+    "gen_time_sec": 1.6536325399999896,
+    "audio_duration_sec": 5.238,
+    "rtf": 0.3156992248949961,
+    "mode": "batch"
+  },
+  "ar_2": {
+    "gen_time_sec": 0.767532342000095,
+    "audio_duration_sec": 4.448666666666667,
+    "rtf": 0.1725308726210314,
+    "mode": "batch"
+  },
+  "ar_3": {
+    "gen_time_sec": 0.6889241660001062,
+    "audio_duration_sec": 3.99,
+    "rtf": 0.17266269824564065,
+    "mode": "batch"
+  }
+}

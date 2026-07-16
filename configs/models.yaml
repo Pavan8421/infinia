@@ -27,8 +27,8 @@ models:
     cloning: true
     streaming: true  # Coqui XTTS has a streaming mode; verify when wiring
     requirements: requirements/xtts.txt
-    status: working  # Phase 2 step 4 — English test WAVs generated on RTX PRO 6000
-    notes: "Use coqui-tts (not legacy TTS). Pin transformers>=4.57,<5. Run: python scripts/run_english.py"
+    status: working  # English + Arabic XTTS on RTX PRO 6000
+    notes: "Use coqui-tts (not legacy TTS). Pin transformers>=4.57,<5. Run: scripts/run_english.py / run_arabic.py"
 
   indic_parler_tts:
     family: ai4bharat

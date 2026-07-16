@@ -1,0 +1,50 @@
+{
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model": "xtts_v2",
+  "language": "arabic",
+  "reference": "/teamspace/studios/this_studio/infinia-voice-pipeline/data/reference/speaker_ref.wav",
+  "cloning": "cross-lingual from reference wav",
+  "clips": [
+    {
+      "id": "ar_1",
+      "text": "الطقس اليوم جميل ومناسب للمشي في الحديقة.",
+      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/arabic/xtts/ar_1.wav",
+      "wer_pct": 42.857142857142854,
+      "hypothesis": "التقس اليوم جميل ومن ناسب للمشي في الحديقة",
+      "cosine": 0.8463800740260444,
+      "cosine_meets_target": true,
+      "gen_time_sec": 1.6536325399999896,
+      "audio_duration_sec": 5.238,
+      "rtf": 0.3156992248949961
+    },
+    {
+      "id": "ar_2",
+      "text": "اتصل بأحمد على الرقم خمسة وعشرين فوراً.",
+      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/arabic/xtts/ar_2.wav",
+      "wer_pct": 28.57142857142857,
+      "hypothesis": "اتصل بأحمد على الرقم 25 فوراً.",
+      "cosine": 0.7666713727832664,
+      "cosine_meets_target": true,
+      "gen_time_sec": 0.767532342000095,
+      "audio_duration_sec": 4.448666666666667,
+      "rtf": 0.1725308726210314
+    },
+    {
+      "id": "ar_3",
+      "text": "افتح النافذة قبل بدء الاجتماع بعد الظهر.",
+      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/arabic/xtts/ar_3.wav",
+      "wer_pct": 0.0,
+      "hypothesis": "افتح النافذة قبل بدء الاجتماع بعد الظهر.",
+      "cosine": 0.803212033033374,
+      "cosine_meets_target": true,
+      "gen_time_sec": 0.6889241660001062,
+      "audio_duration_sec": 3.99,
+      "rtf": 0.17266269824564065
+    }
+  ],
+  "averages": {
+    "wer_pct": 23.809523809523807,
+    "cosine": 0.8054211599475615,
+    "rtf": 0.22029759858722273
+  }
+}
