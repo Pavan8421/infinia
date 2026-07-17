@@ -1,0 +1,50 @@
+{
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model": "chatterbox",
+  "language": "english",
+  "reference": "/teamspace/studios/this_studio/infinia/data/reference/speaker_ref.wav",
+  "cloning": true,
+  "clips": [
+    {
+      "id": "en_1",
+      "text": "The weather today feels perfect for a long walk outside.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/chatterbox/en_1.wav",
+      "wer_pct": 0.0,
+      "hypothesis": "The weather today feels perfect for a long walk outside.",
+      "cosine": 0.8918913017399078,
+      "cosine_meets_target": true,
+      "gen_time_sec": 1.5484273439997196,
+      "audio_duration_sec": 2.68,
+      "rtf": 0.5777713970148207
+    },
+    {
+      "id": "en_2",
+      "text": "Please call Rahul at extension two four seven immediately.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/chatterbox/en_2.wav",
+      "wer_pct": 14.285714285714285,
+      "hypothesis": "Please call Vlahool at extension 247 immediately.",
+      "cosine": 0.8752300810238668,
+      "cosine_meets_target": true,
+      "gen_time_sec": 1.3181734330000836,
+      "audio_duration_sec": 3.2,
+      "rtf": 0.4119291978125261
+    },
+    {
+      "id": "en_3",
+      "text": "Open the window before the meeting starts this afternoon.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/chatterbox/en_3.wav",
+      "wer_pct": 0.0,
+      "hypothesis": "Open the window before the meeting starts this afternoon.",
+      "cosine": 0.8619778541626736,
+      "cosine_meets_target": true,
+      "gen_time_sec": 1.0925756830001774,
+      "audio_duration_sec": 2.44,
+      "rtf": 0.4477769192623678
+    }
+  ],
+  "averages": {
+    "wer_pct": 4.761904761904762,
+    "cosine": 0.8763664123088161,
+    "rtf": 0.4791591713632382
+  }
+}

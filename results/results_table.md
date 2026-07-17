@@ -2,20 +2,22 @@
 
 Hardware: NVIDIA RTX PRO 6000 Blackwell Server Edition (96 GB) on Lightning AI  
 Reference: `data/reference/speaker_ref.wav`  
-Source JSONs: `results/english_xtts_eval.json`, `arabic_xtts_eval.json`, `hindi_xtts_eval.json`, `hindi_parler_eval.json`  
+Source JSONs: `results/english_xtts_eval.json`, `english_chatterbox_eval.json`, `arabic_xtts_eval.json`, `hindi_xtts_eval.json`, `hindi_parler_eval.json`  
 ASR: Whisper large-v3 · Speaker sim: Resemblyzer · EN number-word normalization for WER
 
 ## Summary (averages vs targets)
 
 | Language | Model | MOS (≥4.0) | Speaker sim (≥0.75) | Latency (batch, &lt;2s) | RTF (≤0.5) | WER (≤10%) | Notes |
 |----------|-------|------------|---------------------|------------------------|------------|------------|-------|
-| English | xtts_v2 | *pending* | **0.79** ✓ | **0.70–1.44 s** ✓ | **0.21** ✓ | **0.0%** ✓ | WAVs in `outputs/english/xtts/`. Cosine avg meets target; en_1 alone is 0.75 (borderline). Listener said clone is only moderately similar — report both. EN compare model still open. |
-| Hindi | indic_parler_tts | *pending* | **0.51** ✗ | **2.75–3.99 s** ✗ | **0.75** ✗ | **36.7%** ✗ | Named-speaker **Divya** (description), **not** WAV clone. Cosine vs ref is informational only. WER better than Hindi XTTS (50%); latency/RTF worse. WAVs in `outputs/hindi/parler/`. |
-| Hindi | xtts_v2 | *pending* | **0.86** ✓ | **1.01–1.59 s** ✓ | **0.21** ✓ | **50.0%** ✗ | Cross-lingual clone from reference. Wins clone + speed vs Parler; loses on raw WER. High WER largely ASR near-misses — listen before blaming TTS. |
-| Arabic | xtts_v2 | *pending* | **0.81** ✓ | **0.69–1.65 s** ✓ | **0.22** ✓ | **23.8%** ✗ | Cross-lingual clone. WER miss: ASR typos + `خمسة وعشرين`→`25`. AR compare model still open. |
+| English | xtts_v2 | *pending* | **0.79** ✓ | **0.70–1.44 s** ✓ | **0.21** ✓ | **0.0%** ✓ | Same ref clone. Best WER + RTF. Cosine avg OK; en_1 borderline 0.75. |
+| English | chatterbox | *pending* | **0.88** ✓ | **1.09–1.55 s** ✓ | **0.48** ✓ | **4.8%** ✓ | Zero-shot clone from same ref. Stronger speaker sim than XTTS; WER hit on `Rahul`→`Vlahool` (en_2). en_1 RTF 0.58 alone misses; avg OK. WAVs in `outputs/english/chatterbox/`. |
+| Hindi | indic_parler_tts | *pending* | **0.51** ✗ | **2.75–3.99 s** ✗ | **0.75** ✗ | **36.7%** ✗ | Named-speaker **Divya** (description), **not** WAV clone. Cosine vs ref informational. WER better than Hindi XTTS (50%); latency/RTF worse. |
+| Hindi | xtts_v2 | *pending* | **0.86** ✓ | **1.01–1.59 s** ✓ | **0.21** ✓ | **50.0%** ✗ | Cross-lingual clone. Wins clone + speed vs Parler; loses on raw WER. |
+| Arabic | xtts_v2 | *pending* | **0.81** ✓ | **0.69–1.65 s** ✓ | **0.22** ✓ | **23.8%** ✗ | Cross-lingual clone. WER miss: ASR typos + numbers. AR compare still open. |
 | Arabic | fish_speech / mms | — | — | — | — | — | Phase B compare pending |
 
-**Hindi compare note:** XTTS = clone of our reference; Parler = fixed Divya voice. Speaker-sim target applies to XTTS only. Fair compare axes: MOS / WER / latency / RTF (+ whether product needs cloning).
+**English compare note:** Both clone the same reference. Chatterbox wins speaker similarity; XTTS wins WER and RTF. Pick after MOS listen.  
+**Hindi compare note:** XTTS = clone; Parler = fixed Divya. Speaker-sim target applies to XTTS only.
 
 ## English · xtts_v2 — per clip
 
@@ -26,7 +28,16 @@ ASR: Whisper large-v3 · Speaker sim: Resemblyzer · EN number-word normalizatio
 | en_3 | 0.0% | 0.814 | 0.70 s | 3.80 s | 0.185 | ✓ |
 | **AVG** | **0.0%** | **0.790** | — | — | **0.214** | ✓ avg |
 
-Targets hit for English (auto metrics): latency, RTF, WER, speaker sim (average). MOS still open.
+## English · chatterbox — per clip
+
+Zero-shot clone from reference. Source: `results/english_chatterbox_eval.json`.
+
+| Clip | WER | Cosine | Gen time | Duration | RTF | Notes |
+|------|-----|--------|----------|----------|-----|-------|
+| en_1 | 0.0% | 0.892 | 1.55 s | 2.68 s | 0.578 | RTF alone above 0.5 |
+| en_2 | 14.3% | 0.875 | 1.32 s | 3.20 s | 0.412 | Whisper: `Rahul`→`Vlahool`; `247` OK |
+| en_3 | 0.0% | 0.862 | 1.09 s | 2.44 s | 0.448 | clean |
+| **AVG** | **4.8%** | **0.876** | — | — | **0.479** | sim/latency/WER/RTF (avg) ✓ |
 
 ## Arabic · xtts_v2 — per clip
 
@@ -65,6 +76,6 @@ Named-speaker **Divya** (description); not WAV cloning. Source: `results/hindi_p
 
 | Language | Winner | One-line reason |
 |----------|--------|-----------------|
-| English | TBD | Need EN compare model (Chatterbox / CosyVoice) |
-| Hindi | TBD | Tentative: **XTTS if cloning required**; Parler if native Hindi naturalness/WER after MOS — listen first |
+| English | TBD | Auto metrics: Chatterbox better clone (0.88 vs 0.79); XTTS better WER/RTF — decide after MOS |
+| Hindi | TBD | Tentative: **XTTS if cloning required**; Parler if native Hindi naturalness/WER after MOS |
 | Arabic | TBD | Need AR compare model (Fish / MMS) |

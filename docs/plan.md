@@ -167,13 +167,13 @@ Same locked sentences + same metrics for every model×language. Prefer models th
 
 ## Immediate next actions
 
-1. ~~Restore `speaker_ref.wav` + install requirements~~ Done.
-2. ~~Implement Hindi Indic Parler~~ Done (`pipelines/hindi_parler.py`).
-3. **Run + eval Hindi Parler** (GPU on):
+1. ~~Restore env + Hindi Indic Parler~~ Done (metrics in results table).
+2. ~~Implement English Chatterbox~~ Done (`pipelines/english_chatterbox.py`).
+3. **Run + eval Chatterbox** (GPU on):
    ```bash
-   python scripts/run_hindi_parler.py --device cuda
-   python scripts/eval_hindi_parler.py
+   python scripts/run_english_chatterbox.py --device cuda
+   python scripts/eval_english_chatterbox.py
    ```
-   Then fill the Parler row in `results/results_table.md`.
-4. English compare (Chatterbox / CosyVoice) → Arabic compare (Fish / MMS).
+   Then fill the Chatterbox row in `results/results_table.md`.
+4. Optional: CosyVoice2 for English; then Arabic compare (Fish / MMS).
 5. MOS + winners + README.

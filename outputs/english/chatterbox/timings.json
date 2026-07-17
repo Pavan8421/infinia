@@ -1,0 +1,26 @@
+{
+  "en_1": {
+    "gen_time_sec": 1.5484273439997196,
+    "audio_duration_sec": 2.68,
+    "rtf": 0.5777713970148207,
+    "mode": "batch",
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5
+  },
+  "en_2": {
+    "gen_time_sec": 1.3181734330000836,
+    "audio_duration_sec": 3.2,
+    "rtf": 0.4119291978125261,
+    "mode": "batch",
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5
+  },
+  "en_3": {
+    "gen_time_sec": 1.0925756830001774,
+    "audio_duration_sec": 2.44,
+    "rtf": 0.4477769192623678,
+    "mode": "batch",
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5
+  }
+}

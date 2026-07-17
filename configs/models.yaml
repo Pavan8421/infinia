@@ -47,6 +47,21 @@ models:
       Eval: python scripts/eval_hindi_parler.py
       Speaker cosine vs reference WAV is informational (no clone).
 
+  chatterbox:
+    family: resemble_ai
+    package: chatterbox-tts==0.1.7
+    model_name: ChatterboxTTS
+    languages: [english]
+    cloning: true  # audio_prompt_path = reference WAV
+    exaggeration: 0.5
+    cfg_weight: 0.5
+    requirements: requirements/chatterbox.txt
+    status: implemented  # pipelines/english_chatterbox.py
+    notes: >-
+      Run: python scripts/run_english_chatterbox.py --device cuda
+      Eval: python scripts/eval_english_chatterbox.py
+      Align torchvision to installed torch if import fails (see requirements/chatterbox.txt).
+
   fish_speech:
     family: fish_speech
     languages: [arabic]  # candidate comparison
