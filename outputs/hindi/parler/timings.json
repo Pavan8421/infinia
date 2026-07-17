@@ -1,0 +1,23 @@
+{
+  "hi_1": {
+    "gen_time_sec": 3.035322438000094,
+    "audio_duration_sec": 3.599092970521542,
+    "rtf": 0.8433576078364676,
+    "mode": "batch",
+    "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+  },
+  "hi_2": {
+    "gen_time_sec": 3.9926885620002395,
+    "audio_duration_sec": 5.456689342403628,
+    "rtf": 0.7317053091099176,
+    "mode": "batch",
+    "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+  },
+  "hi_3": {
+    "gen_time_sec": 2.75076088600008,
+    "audio_duration_sec": 4.121541950113379,
+    "rtf": 0.6674106242990951,
+    "mode": "batch",
+    "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+  }
+}

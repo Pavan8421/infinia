@@ -1,7 +1,11 @@
-# Indic Parler-TTS (AI4Bharat) — Hindi / Telugu
-# Install when running Hindi/Telugu pipelines; may conflict with Coqui TTS.
-torch
-torchaudio
-transformers
-parler-tts
-soundfile
+# Indic Parler-TTS (AI4Bharat) — Hindi compare model.
+#
+# CONFLICT: parler-tts 0.2.3 requires transformers==4.46.1;
+# coqui-tts (XTTS) requires transformers>=4.57. Do not keep both happy
+# in one env. This Studio is for Parler compares; XTTS metrics are locked
+# from prior runs.
+#
+# Do NOT pip-install torch here — use Studio CUDA torch (e.g. 2.8.0+cu128).
+parler-tts==0.2.3
+transformers==4.46.1
+soundfile>=0.12

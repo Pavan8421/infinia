@@ -32,11 +32,20 @@ models:
 
   indic_parler_tts:
     family: ai4bharat
-    model_name: ai4bharat/indic-parler-tts  # confirm HF id at install time
-    languages: [hindi, telugu]
-    cloning: false  # style/description based; confirm at install
+    model_name: ai4bharat/indic-parler-tts
+    package: parler-tts==0.2.3
+    languages: [hindi]  # Telugu out of scope
+    cloning: false  # description / named-speaker only (Divya / Rohit)
+    default_description: >-
+      Divya's voice is monotone yet slightly fast in delivery, with a very
+      close recording that almost has no background noise.
     requirements: requirements/parler.txt
-    status: planned  # Phase 4
+    transformers_pin: "4.46.1"  # incompatible with coqui-tts (>=4.57)
+    status: implemented  # pipelines/hindi_parler.py · scripts/run_hindi_parler.py
+    notes: >-
+      Run: python scripts/run_hindi_parler.py --device cuda
+      Eval: python scripts/eval_hindi_parler.py
+      Speaker cosine vs reference WAV is informational (no clone).
 
   fish_speech:
     family: fish_speech

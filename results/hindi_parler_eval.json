@@ -1,0 +1,54 @@
+{
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model": "indic_parler_tts",
+  "language": "hindi",
+  "reference": "/teamspace/studios/this_studio/infinia/data/reference/speaker_ref.wav",
+  "cloning": false,
+  "cloning_note": "Description/named-speaker control only; not WAV cloning. Speaker cosine vs assignment reference is expected to be low.",
+  "clips": [
+    {
+      "id": "hi_1",
+      "text": "आज मौसम बाहर लंबी सैर के लिए बहुत अच्छा है।",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/parler/hi_1.wav",
+      "wer_pct": 30.0,
+      "hypothesis": "आज मौसम बहार लंबी सेर के लिए बहुत अच्छा है",
+      "cosine": 0.49479879097308244,
+      "cosine_meets_target": false,
+      "gen_time_sec": 3.035322438000094,
+      "audio_duration_sec": 3.599092970521542,
+      "rtf": 0.8433576078364676,
+      "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+    },
+    {
+      "id": "hi_2",
+      "text": "कृपया राहुल को नंबर चौबीस सात पर तुरंत कॉल करें।",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/parler/hi_2.wav",
+      "wer_pct": 60.0,
+      "hypothesis": "कृपया राहूल को नमब 247 पर तुरंद कॉल करें",
+      "cosine": 0.5409777367017017,
+      "cosine_meets_target": false,
+      "gen_time_sec": 3.9926885620002395,
+      "audio_duration_sec": 5.456689342403628,
+      "rtf": 0.7317053091099176,
+      "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+    },
+    {
+      "id": "hi_3",
+      "text": "दोपहर की मीटिंग शुरू होने से पहले खिड़की खोल दो।",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/parler/hi_3.wav",
+      "wer_pct": 20.0,
+      "hypothesis": "दोपहर की मीटिंग शुरू होने से पहले खिरकी खोल दो",
+      "cosine": 0.4936592965380376,
+      "cosine_meets_target": false,
+      "gen_time_sec": 2.75076088600008,
+      "audio_duration_sec": 4.121541950113379,
+      "rtf": 0.6674106242990951,
+      "description": "Divya's voice is monotone yet slightly fast in delivery, with a very close recording that almost has no background noise."
+    }
+  ],
+  "averages": {
+    "wer_pct": 36.666666666666664,
+    "cosine": 0.5098119414042739,
+    "rtf": 0.7474911804151602
+  }
+}
