@@ -2,49 +2,49 @@
   "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
   "model": "xtts_v2",
   "language": "hindi",
-  "reference": "/teamspace/studios/this_studio/infinia-voice-pipeline/data/reference/speaker_ref.wav",
+  "reference": "/teamspace/studios/this_studio/infinia/data/reference/speaker_ref.wav",
   "cloning": "cross-lingual from reference wav",
   "clips": [
     {
       "id": "hi_1",
       "text": "आज मौसम बाहर लंबी सैर के लिए बहुत अच्छा है।",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/hindi/xtts/hi_1.wav",
-      "wer_pct": 40.0,
-      "hypothesis": "आज मोसम बहार लंबी सेल के लिए बहुत अच्छा है",
-      "cosine": 0.8552374778611889,
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/xtts/hi_1.wav",
+      "wer_pct": 30.0,
+      "hypothesis": "आज मोसम बाहर लंबी सेर के लिए बहुत अच्छा है",
+      "cosine": 0.8651591014233163,
       "cosine_meets_target": true,
-      "gen_time_sec": 1.5871323999999731,
-      "audio_duration_sec": 5.984666666666667,
-      "rtf": 0.2651997994875749
+      "gen_time_sec": 1.5896037680000745,
+      "audio_duration_sec": 6.774,
+      "rtf": 0.23466249896664815
     },
     {
       "id": "hi_2",
       "text": "कृपया राहुल को नंबर चौबीस सात पर तुरंत कॉल करें।",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/hindi/xtts/hi_2.wav",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/xtts/hi_2.wav",
       "wer_pct": 60.0,
-      "hypothesis": "प्रिप्या राहुल को नमबर 24 साथ पर तुरंट कॉल करें",
-      "cosine": 0.8551915708100156,
+      "hypothesis": "तुरपिया राहुल को नमबर 247 पर तुरंट कॉल करें",
+      "cosine": 0.8586021910817182,
       "cosine_meets_target": true,
-      "gen_time_sec": 1.037684717999582,
-      "audio_duration_sec": 5.515333333333333,
-      "rtf": 0.18814542209589907
+      "gen_time_sec": 1.0497380900000053,
+      "audio_duration_sec": 6.219333333333333,
+      "rtf": 0.16878627237646135
     },
     {
       "id": "hi_3",
       "text": "दोपहर की मीटिंग शुरू होने से पहले खिड़की खोल दो।",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/hindi/xtts/hi_3.wav",
-      "wer_pct": 50.0,
-      "hypothesis": "जो बहर की मीटिंग शुरू होने से पहले किरकी खोर दो",
-      "cosine": 0.8607287128732306,
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/hindi/xtts/hi_3.wav",
+      "wer_pct": 30.0,
+      "hypothesis": "दोपहर की मीटिंग शुरू होने से पहले खिरकी खोर दो",
+      "cosine": 0.844465874898458,
       "cosine_meets_target": true,
-      "gen_time_sec": 1.0139703009990626,
-      "audio_duration_sec": 5.472666666666667,
-      "rtf": 0.1852790171151899
+      "gen_time_sec": 1.0929767710000533,
+      "audio_duration_sec": 6.443333333333333,
+      "rtf": 0.16962909017072736
     }
   ],
   "averages": {
-    "wer_pct": 50.0,
-    "cosine": 0.8570525871814784,
-    "rtf": 0.21287474623288793
+    "wer_pct": 40.0,
+    "cosine": 0.8560757224678309,
+    "rtf": 0.19102595383794563
   }
 }

@@ -1,19 +1,19 @@
 clip_id,language,model,listener,mos,notes
-en_1,english,xtts_v2,you,,
-en_2,english,xtts_v2,you,,
-en_3,english,xtts_v2,you,,
-en_1,english,chatterbox,you,,
-en_2,english,chatterbox,you,,
-en_3,english,chatterbox,you,,
-hi_1,hindi,xtts_v2,you,,
-hi_2,hindi,xtts_v2,you,,
-hi_3,hindi,xtts_v2,you,,
-hi_1,hindi,indic_parler_tts,you,,
-hi_2,hindi,indic_parler_tts,you,,
-hi_3,hindi,indic_parler_tts,you,,
-ar_1,arabic,xtts_v2,you,,
-ar_2,arabic,xtts_v2,you,,
-ar_3,arabic,xtts_v2,you,,
-ar_1,arabic,mms_tts,you,,
-ar_2,arabic,mms_tts,you,,
-ar_3,arabic,mms_tts,you,,
+en_1,english,xtts_v2,you,3,clone weak — sounds like a different speaker
+en_2,english,xtts_v2,you,3,clone weak — sounds like a different speaker
+en_3,english,xtts_v2,you,3,clone weak — sounds like a different speaker
+en_1,english,chatterbox,you,5,clone matches reference well
+en_2,english,chatterbox,you,4,clone good; delivery somewhat fast
+en_3,english,chatterbox,you,4,clone good; delivery somewhat fast
+hi_1,hindi,xtts_v2,you,5,good clone and decent speed
+hi_2,hindi,xtts_v2,you,4,name "Rahul" not pronounced clearly
+hi_3,hindi,xtts_v2,you,3,noticeable breaks / discontinuities in the voice
+hi_1,hindi,indic_parler_tts,you,3,no clone (Divya); robotic; very low volume
+hi_2,hindi,indic_parler_tts,you,3,no clone (Divya); robotic; very low volume
+hi_3,hindi,indic_parler_tts,you,3,no clone (Divya); robotic; very low volume
+ar_1,arabic,xtts_v2,you,4,non-native listener (no Arabic); natural; clone matches my voice
+ar_2,arabic,xtts_v2,you,4,non-native listener (no Arabic); natural; clone matches my voice
+ar_3,arabic,xtts_v2,you,4,non-native listener (no Arabic); natural; clone matches my voice
+ar_1,arabic,mms_tts,you,4,non-native listener (no Arabic); smooth/natural; no clone (fixed MMS speaker)
+ar_2,arabic,mms_tts,you,4,non-native listener (no Arabic); smooth/natural; no clone (fixed MMS speaker)
+ar_3,arabic,mms_tts,you,4,non-native listener (no Arabic); smooth/natural; no clone (fixed MMS speaker)

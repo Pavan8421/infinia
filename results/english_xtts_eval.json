@@ -1,16 +1,16 @@
 {
   "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
   "model": "xtts_v2",
-  "reference": "/teamspace/studios/this_studio/infinia-voice-pipeline/data/reference/speaker_ref.wav",
+  "reference": "/teamspace/studios/this_studio/infinia/data/reference/speaker_ref.wav",
   "clips": [
     {
       "id": "en_1",
       "text": "The weather today feels perfect for a long walk outside.",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/english/xtts/en_1.wav",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/xtts/en_1.wav",
       "wer_pct": 0.0,
       "hypothesis": "The weather today feels perfect for a long walk outside.",
-      "cosine": 0.7457096235090764,
-      "cosine_meets_target": false,
+      "cosine": 0.7613524819175,
+      "cosine_meets_target": true,
       "gen_time_sec": 1.4439,
       "audio_duration_sec": 5.2913,
       "rtf": 0.2729
@@ -18,10 +18,10 @@
     {
       "id": "en_2",
       "text": "Please call Rahul at extension two four seven immediately.",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/english/xtts/en_2.wav",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/xtts/en_2.wav",
       "wer_pct": 0.0,
       "hypothesis": "Please call Rahul at extension 247 immediately.",
-      "cosine": 0.8110971208528819,
+      "cosine": 0.8226961093066383,
       "cosine_meets_target": true,
       "gen_time_sec": 0.9525,
       "audio_duration_sec": 5.1527,
@@ -30,10 +30,10 @@
     {
       "id": "en_3",
       "text": "Open the window before the meeting starts this afternoon.",
-      "wav_path": "/teamspace/studios/this_studio/infinia-voice-pipeline/outputs/english/xtts/en_3.wav",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/english/xtts/en_3.wav",
       "wer_pct": 0.0,
       "hypothesis": "Open the window before the meeting starts this afternoon.",
-      "cosine": 0.8140618020225187,
+      "cosine": 0.8061699021353144,
       "cosine_meets_target": true,
       "gen_time_sec": 0.7037,
       "audio_duration_sec": 3.798,
@@ -42,7 +42,7 @@
   ],
   "averages": {
     "wer_pct": 0.0,
-    "cosine": 0.7902895154614923,
+    "cosine": 0.7967394977864842,
     "rtf": 0.21436666666666668
   }
 }
