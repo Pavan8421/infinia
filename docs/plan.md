@@ -167,13 +167,7 @@ Same locked sentences + same metrics for every model×language. Prefer models th
 
 ## Immediate next actions
 
-1. ~~Restore env + Hindi Indic Parler~~ Done (metrics in results table).
-2. ~~Implement English Chatterbox~~ Done (`pipelines/english_chatterbox.py`).
-3. **Run + eval Chatterbox** (GPU on):
-   ```bash
-   python scripts/run_english_chatterbox.py --device cuda
-   python scripts/eval_english_chatterbox.py
-   ```
-   Then fill the Chatterbox row in `results/results_table.md`.
-4. Optional: CosyVoice2 for English; then Arabic compare (Fish / MMS).
-5. MOS + winners + README.
+1. ~~Model compares (EN Chatterbox, HI Parler, AR MMS)~~ Done — see `results/results_table.md`.
+2. **MOS** — fill `eval/mos_sheet.csv` for finalists (you + 1–2 listeners).
+3. **Declare winners** per language in the results table.
+4. **Write-up** — failure modes, what’s missing, README one-paragraph recommended setup.

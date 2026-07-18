@@ -64,15 +64,22 @@ models:
 
   fish_speech:
     family: fish_speech
-    languages: [arabic]  # candidate comparison
+    languages: [arabic]
     requirements: null
-    status: planned  # Phase 4
+    status: skipped  # chose MMS for Arabic compare
 
   mms_tts:
     family: meta_mms
-    languages: [arabic, telugu]  # fallback / comparison
-    requirements: null
-    status: planned  # Phase 4
+    model_name: facebook/mms-tts-ara
+    languages: [arabic]  # Telugu out of scope
+    cloning: false  # fixed single speaker
+    requirements: requirements/mms.txt
+    status: implemented  # pipelines/arabic_mms.py
+    notes: >-
+      Run: python scripts/run_arabic_mms.py --device cuda
+      Eval: python scripts/eval_arabic_mms.py
+      Needs transformers + torch only (already installed).
+      Speaker cosine vs reference is informational (no clone).
 
 eval:
   asr:

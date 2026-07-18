@@ -1,0 +1,10 @@
+# Meta MMS-TTS Arabic (facebook/mms-tts-ara) via Hugging Face transformers.
+# Uses already-installed torch + transformers + soundfile — no extra package.
+# Keep Studio torch 2.8.0+cu128 for Blackwell (sm_120).
+#
+# Verify:
+#   python -c "from transformers import VitsModel, AutoTokenizer; print('ok')"
+#
+# Run:
+#   python scripts/run_arabic_mms.py --device cuda
+#   python scripts/eval_arabic_mms.py

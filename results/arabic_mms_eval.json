@@ -1,0 +1,52 @@
+{
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model": "mms_tts",
+  "model_name": "facebook/mms-tts-ara",
+  "language": "arabic",
+  "reference": "/teamspace/studios/this_studio/infinia/data/reference/speaker_ref.wav",
+  "cloning": false,
+  "cloning_note": "Fixed MMS Arabic speaker; not WAV cloning. Speaker cosine vs assignment reference is expected to be low.",
+  "clips": [
+    {
+      "id": "ar_1",
+      "text": "الطقس اليوم جميل ومناسب للمشي في الحديقة.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/arabic/mms/ar_1.wav",
+      "wer_pct": 42.857142857142854,
+      "hypothesis": "ويأتي التقص اليوم جميلي ومناسب للمشي في الحديقة",
+      "cosine": 0.5577540427401709,
+      "cosine_meets_target": false,
+      "gen_time_sec": 0.659302380000554,
+      "audio_duration_sec": 5.024,
+      "rtf": 0.1312305692676262
+    },
+    {
+      "id": "ar_2",
+      "text": "اتصل بأحمد على الرقم خمسة وعشرين فوراً.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/arabic/mms/ar_2.wav",
+      "wer_pct": 28.57142857142857,
+      "hypothesis": "الصل بأحمد على الرقم خمسة وعشرين فورا",
+      "cosine": 0.5209201472049777,
+      "cosine_meets_target": false,
+      "gen_time_sec": 0.0824209129996234,
+      "audio_duration_sec": 5.152,
+      "rtf": 0.015997848020113236
+    },
+    {
+      "id": "ar_3",
+      "text": "افتح النافذة قبل بدء الاجتماع بعد الظهر.",
+      "wav_path": "/teamspace/studios/this_studio/infinia/outputs/arabic/mms/ar_3.wav",
+      "wer_pct": 42.857142857142854,
+      "hypothesis": "تحنى في ذتي قبل بدء الاجتماع بعد الظهر",
+      "cosine": 0.5556264707890798,
+      "cosine_meets_target": false,
+      "gen_time_sec": 0.20975561999966885,
+      "audio_duration_sec": 4.864,
+      "rtf": 0.04312409950651087
+    }
+  ],
+  "averages": {
+    "wer_pct": 38.095238095238095,
+    "cosine": 0.5447668869114094,
+    "rtf": 0.06345083893141677
+  }
+}
