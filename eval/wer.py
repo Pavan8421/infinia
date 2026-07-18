@@ -18,8 +18,6 @@ _LANG_TO_WHISPER = {
     "ar": "ar",
     "hindi": "hi",
     "hi": "hi",
-    "telugu": "te",
-    "te": "te",
 }
 
 
@@ -61,7 +59,7 @@ def normalize_text(text: str) -> str:
     """
     Normalize before WER: lowercase, strip punctuation, collapse spoken digits.
 
-    Keeps Arabic / Devanagari / Telugu letters. Maps 'two four seven' and '247'
+    Keeps Arabic / Devanagari letters. Maps 'two four seven' and '247'
     to the same token so ASR digit formatting does not inflate WER.
     """
     import re

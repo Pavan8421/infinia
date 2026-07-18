@@ -167,7 +167,6 @@ Same locked sentences + same metrics for every model×language. Prefer models th
 
 ## Immediate next actions
 
-1. ~~Model compares (EN Chatterbox, HI Parler, AR MMS)~~ Done — see `results/results_table.md`.
-2. **MOS** — fill `eval/mos_sheet.csv` for finalists (you + 1–2 listeners).
-3. **Declare winners** per language in the results table.
-4. **Write-up** — failure modes, what’s missing, README one-paragraph recommended setup.
+1. ~~Benchmarks + MOS + winners~~ Done — see `results/results_table.md` and `README.md`.
+2. Commit/push repo (including WAVs) + draft submission email using the README summary paragraph.
+3. Optional: second MOS listener; polish packaging.

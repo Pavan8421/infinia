@@ -23,7 +23,7 @@ models:
     family: coqui
     package: coqui-tts==0.27.5
     model_name: tts_models/multilingual/multi-dataset/xtts_v2
-    languages: [english, arabic, hindi]  # not Telugu
+    languages: [english, arabic, hindi]
     cloning: true
     streaming: true  # Coqui XTTS has a streaming mode; verify when wiring
     requirements: requirements/xtts.txt
@@ -34,7 +34,7 @@ models:
     family: ai4bharat
     model_name: ai4bharat/indic-parler-tts
     package: parler-tts==0.2.3
-    languages: [hindi]  # Telugu out of scope
+    languages: [hindi]
     cloning: false  # description / named-speaker only (Divya / Rohit)
     default_description: >-
       Divya's voice is monotone yet slightly fast in delivery, with a very
@@ -71,7 +71,7 @@ models:
   mms_tts:
     family: meta_mms
     model_name: facebook/mms-tts-ara
-    languages: [arabic]  # Telugu out of scope
+    languages: [arabic]
     cloning: false  # fixed single speaker
     requirements: requirements/mms.txt
     status: implemented  # pipelines/arabic_mms.py

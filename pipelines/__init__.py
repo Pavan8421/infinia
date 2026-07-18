@@ -11,7 +11,6 @@ from pipelines.english_chatterbox import (
 )
 from pipelines.hindi import HindiPipeline, default_hindi_pipeline
 from pipelines.hindi_parler import HindiParlerPipeline, default_hindi_parler_pipeline
-from pipelines.telugu import TeluguPipeline, default_telugu_pipeline
 
 __all__ = [
     "BaseTTSPipeline",
@@ -24,12 +23,10 @@ __all__ = [
     "ArabicMmsPipeline",
     "HindiPipeline",
     "HindiParlerPipeline",
-    "TeluguPipeline",
     "default_english_pipeline",
     "default_english_chatterbox_pipeline",
     "default_arabic_pipeline",
     "default_arabic_mms_pipeline",
     "default_hindi_pipeline",
     "default_hindi_parler_pipeline",
-    "default_telugu_pipeline",
 ]
