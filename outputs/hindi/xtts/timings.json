@@ -1,20 +1,20 @@
 {
   "hi_1": {
-    "gen_time_sec": 1.5871323999999731,
-    "audio_duration_sec": 5.984666666666667,
-    "rtf": 0.2651997994875749,
+    "gen_time_sec": 1.5896037680000745,
+    "audio_duration_sec": 6.774,
+    "rtf": 0.23466249896664815,
     "mode": "batch"
   },
   "hi_2": {
-    "gen_time_sec": 1.037684717999582,
-    "audio_duration_sec": 5.515333333333333,
-    "rtf": 0.18814542209589907,
+    "gen_time_sec": 1.0497380900000053,
+    "audio_duration_sec": 6.219333333333333,
+    "rtf": 0.16878627237646135,
     "mode": "batch"
   },
   "hi_3": {
-    "gen_time_sec": 1.0139703009990626,
-    "audio_duration_sec": 5.472666666666667,
-    "rtf": 0.1852790171151899,
+    "gen_time_sec": 1.0929767710000533,
+    "audio_duration_sec": 6.443333333333333,
+    "rtf": 0.16962909017072736,
     "mode": "batch"
   }
 }

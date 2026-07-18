@@ -1,20 +1,20 @@
 {
   "ar_1": {
-    "gen_time_sec": 1.6536325399999896,
-    "audio_duration_sec": 5.238,
-    "rtf": 0.3156992248949961,
+    "gen_time_sec": 1.2580517699999518,
+    "audio_duration_sec": 4.8646666666666665,
+    "rtf": 0.2586100664656609,
     "mode": "batch"
   },
   "ar_2": {
-    "gen_time_sec": 0.767532342000095,
-    "audio_duration_sec": 4.448666666666667,
-    "rtf": 0.1725308726210314,
+    "gen_time_sec": 0.7838713989999633,
+    "audio_duration_sec": 4.640666666666666,
+    "rtf": 0.1689135323229342,
     "mode": "batch"
   },
   "ar_3": {
-    "gen_time_sec": 0.6889241660001062,
-    "audio_duration_sec": 3.99,
-    "rtf": 0.17266269824564065,
+    "gen_time_sec": 0.5835587169999599,
+    "audio_duration_sec": 3.382,
+    "rtf": 0.1725484083382495,
     "mode": "batch"
   }
 }
